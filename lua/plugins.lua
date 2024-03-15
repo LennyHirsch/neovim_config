@@ -64,11 +64,18 @@ return {
 		config = true
 	},
 	{
+		"olimorris/onedarkpro.nvim",
+		priority = 1000,
+		init = function()
+			vim.cmd.colorscheme 'onedark'
+		end
+	},
+	{
 		"ellisonleao/gruvbox.nvim",
 		priority = 1000, -- ensures this loads before other plugins
-		init = function()
-			vim.cmd.colorscheme 'gruvbox'
-			vim.cmd.hi 'Comment gui=none'
-		end,
+		--init = function()
+		--	vim.cmd.colorscheme 'gruvbox'
+		--	vim.cmd.hi 'Comment gui=none'
+		--end,
 	},
 }

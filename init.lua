@@ -73,6 +73,7 @@ require "options"
 require("telescope").setup()
 require("lualine").setup()
 require("mason").setup()
+require 'rustyllama'
 -- BUGGED: Don't know why, but treesitter doesn't play nice. Throws errors at each startup, fucks with everything... >:(
 --require('nvim-treesitter.configs').setup {
 --	-- A directory to install the parsers into.
